@@ -9,16 +9,16 @@
             <span class="nav-title">Dashboards</span>
             <span class="nav-label label label-danger">9</span>
           </a>
-  
+
         </li>
         <li><a routerLink="/home/candidat" aria-expanded="false"><i class="dashicons dashicons-editor-help"></i><span
           class="nav-title">Gerer client</span></a></li>
-  
+
         <li><a routerLink="/home/entreprise" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
           class="nav-title">Gerer produit</span></a></li>
-  
-  
-  
+
+
+
         <li>
           <a class="has-arrow" routerLink="/home/domaine" aria-expanded="false"><i
             class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Domaine</span></a>
@@ -34,14 +34,13 @@
           class="nav-title">Gerer facture</span></a></li>
         <li><a routerLink="" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
           class="nav-title">Gerer fournisseur</span></a></li>
-        <li><a routerLink="" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
+        <li><a [routerLink]="['stock-management/list-stock']" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
           class="nav-title">Gerer stock</span></a></li>
-  <li><a routerLink="" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
+  <li><a [routerLink]="['rayon-management/list-rayon']" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
           class="nav-title">Gerer rayon</span></a></li>
-  
-  
+
+
       </ul>
     </div>
     <!-- end sidebar-nav -->
   </aside>
-  
