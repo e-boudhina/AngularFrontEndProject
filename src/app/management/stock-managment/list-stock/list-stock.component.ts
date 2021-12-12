@@ -29,6 +29,7 @@ export class ListStockComponent implements OnInit {
           //console.log(this.stocks.length);
         });
     }else {
+      console.log("Custom search")
       this.stockService.customSearchByDate(this.startDate,this.endDate)
     }
 

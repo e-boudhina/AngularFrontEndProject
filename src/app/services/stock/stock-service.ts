@@ -14,7 +14,7 @@ export class StockService {
   private updateStockUrl:string='http://localhost:8075/SpringMVC/stock/modify-stock'
   private deleteStockUrl:string='http://localhost:8075/SpringMVC/stock/remove-stock/'
 
-  private getCustomStockUrl:string='http://localhost:8075//SpringMVC/stock/retrieve-stock-between/'
+  private getCustomStockUrl:string='http://localhost:8075/SpringMVC/stock/retrieve-stock-between/'
 
 
   httpOptions = {
@@ -46,6 +46,8 @@ export class StockService {
 
   }
   customSearchByDate(startDate: string, endDate: string): Observable<Stock[]>{
-    return this.http.get<Stock[]>(this.getCustomStockUrl+startDate+'/'+endDate)
+    console.log("here")
+    console.log(this.getCustomStockUrl+startDate+'/'+endDate)
+    return this.http.get<Stock[]>(this.getCustomStockUrl+startDate+'/'+endDate, this.httpOptions)
   }
 }

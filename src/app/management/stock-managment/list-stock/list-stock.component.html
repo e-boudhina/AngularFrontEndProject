@@ -56,7 +56,7 @@
                 </thead>
                 <tbody class="text-muted">
                 <ng-container *ngFor="let stock of stocks | paginate : {itemsPerPage: 3, currentPage: page, totalItems: totalLength}">
-                <tr [ngClass]="stock.qte < stock.qteMin ? 'status_ok': 'status_missing'" >
+                <tr [ngClass]="stock.qte > stock.qteMin ? 'status_ok': 'status_missing'" >
 
                   <td>{{stock.idStock}}</td>
                   <td>{{stock.qte}}</td>
